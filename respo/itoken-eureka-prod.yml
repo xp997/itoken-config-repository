@@ -2,12 +2,8 @@ spring:
   application:
     name: itoken-eureka
 
-server:
-  port: 8761
 
 eureka:
-  instance:
-    hostname: 120.77.253.48
   client:
     registerWithEureka: true
     fetchRegistry: true
