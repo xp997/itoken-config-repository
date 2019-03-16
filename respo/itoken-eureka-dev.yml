@@ -9,7 +9,7 @@ eureka:
   instance:
     hostname: 120.77.253.48
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://120.77.253.48:8761/eureka/,http://120.77.253.48:8861/eureka/,http://120.77.253.48:8961/eureka/
