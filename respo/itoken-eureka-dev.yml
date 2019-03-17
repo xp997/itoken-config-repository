@@ -1,5 +1,4 @@
 spring:
-  profiles: itoken-eureka1
   application:
     name: itoken-eureka
 
