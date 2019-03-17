@@ -14,41 +14,4 @@ eureka:
     fetchRegistry: true
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http://120.77.253.48:8761/eureka/
-
----
-spring:
-  profiles: itoken-eureka2
-  application:
-    name: itoken-eureka
-
-server:
-  port: 8861
-
-eureka:
-  instance:
-    hostname: 120.77.253.48
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    register-with-eureka: false
-    serviceUrl:
-      defaultZone: http://120.77.253.48:8861/eureka/
----
-spring:
-  profiles: itoken-eureka3
-  application:
-    name: itoken-eureka
-
-server:
-  port: 8961
-
-eureka:
-  instance:
-    hostname: 120.77.253.48
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    register-with-eureka: false
-    serviceUrl:
-      defaultZone: http://120.77.253.48:8961/eureka/
+      defaultZone: http://120.77.253.48:8761/eureka/,http://120.77.253.48:8861/eureka/,http://120.77.253.48:8961/eureka/
