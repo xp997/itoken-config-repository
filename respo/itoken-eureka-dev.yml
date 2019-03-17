@@ -1,7 +1,6 @@
 spring:
   application:
     name: itoken-eureka
-
 server:
   port: 8761
 
