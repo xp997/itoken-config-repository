@@ -2,7 +2,7 @@ spring:
   application:
     name: itoken-eureka
 server:
-  port: 8961
+  port: 8861
 
 eureka:
   instance:
