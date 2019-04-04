@@ -1,6 +1,17 @@
 spring:
   application:
     name: itoken-service-admin
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/itoken-service-admin?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 1096150741
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      # MySQL 8.x: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
 server:
   port: 8201
 
@@ -20,9 +31,6 @@ management:
     web:
       exposure:
         include: health,info
-datasource:
-  druid:
-    url: jdbc:mysql//localhost:3306/itoken-service-admin
-    username: root
-
-
+mybatis:
+  type-aliases-package: cn.xp1997.itoken.service.admin.domain
+  mapper-locations: classpath:mapper/*.xml
