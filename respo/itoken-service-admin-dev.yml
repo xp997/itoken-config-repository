@@ -28,5 +28,5 @@ management:
       exposure:
         include: health,info
 mybatis:
-    type-aliases-package: cn.xp1997.itoken.service.admin.mapper
+    type-aliases-package: cn.xp1997.itoken.service.admin.pojo
     mapper-locations: classpath:mapper/*.xml
